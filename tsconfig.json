@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es7"
+    ],
+    "moduleResolution": "node",
+    "declaration": false,
+    "sourceMap": true,
+    "sourceRoot": "src",
+    "rootDir": "src",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

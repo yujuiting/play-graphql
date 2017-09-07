@@ -1,0 +1,33 @@
+type Author {
+  id: ID!
+  name: String
+  posts: [Post]
+}
+
+type Post {
+  id: ID!
+  title: String
+  content: String
+  author: Author
+}
+
+type Query {
+  authors: [Author]
+  posts: [Post]
+}
+
+type Mutation {
+  createAuthor(
+    name: String
+  ): Author
+  createPost(
+    title: String,
+    content: String,
+    authorId: String
+  ): Post
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
