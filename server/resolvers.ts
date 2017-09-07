@@ -1,17 +1,5 @@
 import { GraphQLResolveInfo } from 'graphql/type/definition';
-
-interface Author {
-  id: string;
-  name: string;
-  posts: Post[];
-}
-
-interface Post {
-  id: string;
-  title: string;
-  content: string;
-  author: Author;
-}
+import { Author, Post } from '@shared/interfaces';
 
 const authorStore: Author[] = [];
 const postStore = [];

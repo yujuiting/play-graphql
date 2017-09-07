@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "es7", "dom", "esnext.asynciterable"
+    ],
+    "target": "es5",
+    "moduleResolution": "node",
+    "declaration": false,
+    "sourceMap": true,
+    "sourceRoot": ".",
+    "jsx": "react"
+  },
+  "exclude": [
+    "../node_modules"
+  ]
+}

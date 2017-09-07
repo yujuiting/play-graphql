@@ -1,19 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "es7"
-    ],
-    "moduleResolution": "node",
-    "declaration": false,
-    "sourceMap": true,
-    "sourceRoot": "src",
-    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    },
     "typeRoots": [
-      "node_modules/@types"
+      "../node_modules/@types"
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }
